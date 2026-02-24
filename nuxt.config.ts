@@ -26,6 +26,14 @@ export default defineNuxtConfig({
     baseURL: '/'
   },
 
+  runtimeConfig: {
+    // Variables privées (server-side uniquement)
+    tursoUrl: process.env.TURSO_DATABASE_URL ?? '',
+    tursoAuthToken: process.env.TURSO_AUTH_TOKEN ?? '',
+    resendApiKey: process.env.RESEND_API_KEY ?? '',
+    notifyEmail: process.env.NOTIFY_EMAIL ?? '',
+  },
+
   i18n: {
     locales: [
       { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },

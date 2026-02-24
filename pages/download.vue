@@ -51,11 +51,15 @@
             <button
               type="submit"
               class="w-full btn-primary text-center"
-              :disabled="submitted"
+              :disabled="submitted || loading"
             >
-              {{ submitted ? $t('download.form.submitted') : $t('download.form.submit') }}
+              <span v-if="loading">…</span>
+              <span v-else-if="submitted">{{ $t('download.form.submitted') }}</span>
+              <span v-else>{{ $t('download.form.submit') }}</span>
             </button>
           </form>
+
+          <p v-if="errorMsg" class="text-[#E05A5A] text-[12px] text-center mt-3">{{ errorMsg }}</p>
 
           <p class="text-muted text-[12px] text-center mt-4 leading-[1.6]">
             {{ $t('download.form.disclaimer') }}<br>
@@ -114,6 +118,8 @@ const { tm, rt } = useI18n()
 const email = ref('')
 const platform = ref('ios')
 const submitted = ref(false)
+const loading = ref(false)
+const errorMsg = ref('')
 
 const platforms = computed(() =>
   tm('download.form.platforms').map(p => ({ value: rt(p.value), icon: rt(p.icon), label: rt(p.label) }))
@@ -122,8 +128,21 @@ const upcomingItems = computed(() =>
   tm('download.upcoming.items').map(i => ({ icon: rt(i.icon), title: rt(i.title), desc: rt(i.desc) }))
 )
 
-function submit() {
-  if (email.value) submitted.value = true
+async function submit() {
+  if (!email.value || loading.value) return
+  loading.value = true
+  errorMsg.value = ''
+  try {
+    await $fetch('/api/waitlist', {
+      method: 'POST',
+      body: { email: email.value, platform: platform.value },
+    })
+    submitted.value = true
+  } catch {
+    errorMsg.value = 'Une erreur est survenue. Réessayez dans un instant.'
+  } finally {
+    loading.value = false
+  }
 }
 </script>
 
