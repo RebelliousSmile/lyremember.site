@@ -2,8 +2,9 @@
   <div class="features-page">
     <section class="page-header">
       <div class="container">
-        <h1>Fonctionnalités</h1>
-        <p>Découvrez toutes les capacités de Lyremember</p>
+        <p class="header-label">✦ Fonctionnalités</p>
+        <h1>Tout ce que <span class="header-accent">Lyremember</span> peut faire</h1>
+        <p class="header-sub">Découvrez toutes les capacités de l'application</p>
       </div>
     </section>
 
@@ -112,8 +113,9 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Prêt à essayer ?</h2>
-          <p>Commencez à mémoriser vos découvertes musicales dès maintenant</p>
+          <p class="cta-label">✦ Prêt à commencer ?</p>
+          <h2>Commencez à mémoriser dès maintenant</h2>
+          <p>Transformez votre rapport à la musique avec Lyremember</p>
           <NuxtLink to="/" class="btn btn-primary">Retour à l'accueil</NuxtLink>
         </div>
       </div>
@@ -123,25 +125,15 @@
 
 <style scoped>
 .features-page {
-  background: white;
+  background: #0D0B1A;
 }
 
+/* ─── PAGE HEADER ─── */
 .page-header {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
-  padding: 60px 0;
+  background: radial-gradient(ellipse at top, #13102280, #0D0B1A);
+  border-bottom: 1px solid #2A2440;
+  padding: 70px 0;
   text-align: center;
-}
-
-.page-header h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 15px;
-}
-
-.page-header p {
-  font-size: 1.25rem;
-  opacity: 0.95;
 }
 
 .container {
@@ -150,8 +142,35 @@
   padding: 0 20px;
 }
 
+.header-label {
+  color: #F2A93B;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #F5F0EB;
+  margin-bottom: 14px;
+}
+
+.header-accent {
+  color: #F2A93B;
+}
+
+.header-sub {
+  font-size: 1.1rem;
+  color: #B8B0D0;
+}
+
+/* ─── FEATURES DETAILED ─── */
 .features-detailed {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .feature-detail {
@@ -160,6 +179,10 @@
   gap: 60px;
   margin-bottom: 80px;
   align-items: center;
+  padding: 40px;
+  background: #1A1528;
+  border: 1px solid #2A2440;
+  border-radius: 24px;
 }
 
 .feature-detail.reverse {
@@ -171,24 +194,23 @@
 }
 
 .feature-detail-icon {
-  font-size: 120px;
+  font-size: 100px;
   text-align: center;
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  line-height: 1;
 }
 
 .feature-detail-content h2 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
-  color: #1f2937;
-  margin-bottom: 20px;
+  font-weight: 400;
+  color: #F5F0EB;
+  margin-bottom: 16px;
 }
 
 .feature-detail-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
-  color: #6b7280;
+  color: #B8B0D0;
   margin-bottom: 20px;
 }
 
@@ -198,24 +220,32 @@
 }
 
 .feature-list li {
-  padding: 10px 0;
-  padding-left: 30px;
+  padding: 9px 0;
+  padding-left: 28px;
   position: relative;
-  color: #374151;
+  color: #B8B0D0;
+  font-size: 14px;
+  border-bottom: 1px solid #2A2440;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
 }
 
 .feature-list li::before {
-  content: '✓';
+  content: '●';
   position: absolute;
   left: 0;
-  color: #8b5cf6;
-  font-weight: bold;
-  font-size: 1.2rem;
+  color: #F2A93B;
+  font-size: 8px;
+  top: 12px;
 }
 
+/* ─── CTA ─── */
 .cta-section {
-  background: #f9fafb;
-  padding: 80px 0;
+  background: #131022;
+  border-top: 1px solid #2A2440;
+  padding: 90px 0;
 }
 
 .cta-content {
@@ -224,42 +254,56 @@
   margin: 0 auto;
 }
 
+.cta-label {
+  color: #F2A93B;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
 .cta-content h2 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
-  color: #1f2937;
-  margin-bottom: 15px;
+  font-weight: 300;
+  color: #F5F0EB;
+  margin-bottom: 14px;
 }
 
 .cta-content p {
-  font-size: 1.25rem;
-  color: #6b7280;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #B8B0D0;
+  margin-bottom: 32px;
 }
 
 .btn {
-  padding: 12px 30px;
-  border-radius: 8px;
+  padding: 13px 28px;
+  border-radius: 12px;
   font-weight: 600;
+  font-size: 15px;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.25s;
   display: inline-block;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
+  background: #F2A93B;
+  color: #0D0B1A;
 }
 
 .btn-primary:hover {
+  background: #E09520;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 24px rgba(242, 169, 59, 0.35);
 }
 
 @media (max-width: 968px) {
   .feature-detail,
   .feature-detail.reverse {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
+    padding: 28px;
   }
 
   .feature-detail.reverse .feature-detail-icon {
@@ -267,15 +311,11 @@
   }
 
   .feature-detail-icon {
-    font-size: 80px;
+    font-size: 72px;
   }
 
   .page-header h1 {
-    font-size: 2.5rem;
-  }
-
-  .feature-detail-content h2 {
-    font-size: 1.75rem;
+    font-size: 2.2rem;
   }
 
   .cta-content h2 {
