@@ -18,6 +18,6 @@ body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: #F5F0EB;
-  background: #0D0B1A;
+  background: radial-gradient(ellipse at top, #13102280, #0D0B1A) #0D0B1A;
 }
 </style>

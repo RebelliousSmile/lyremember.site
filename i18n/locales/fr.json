@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "download": "Télécharger"
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "github": "GitHub",
+    "copy": "© 2026"
+  },
+  "index": {
+    "hero": {
+      "label": "✦ Comprendre & Mémoriser",
+      "title_1": "Apprenez vos",
+      "title_2": "chansons",
+      "title_gold": "par cœur",
+      "subtitle": "Lyremember vous donne une traduction bilingue ligne par ligne de vos chansons préférées, puis vous aide à les mémoriser grâce à des exercices interactifs.",
+      "cta_primary": "Télécharger l'app",
+      "cta_secondary": "Fonctionnalités"
+    },
+    "why": {
+      "label": "Pourquoi Lyremember",
+      "title_1": "Une chanson que vous aimez,",
+      "title_2": "des paroles que vous",
+      "title_gold": "ne comprenez pas",
+      "p1": "Vous entendez une chanson en anglais, en espagnol, en japonais. Vous la trouvez belle, vous la mettez en boucle — mais les mots vous échappent. Vous cherchez une traduction, vous la lisez une fois, et elle disparaît.",
+      "p2": "Lyremember met côte à côte chaque vers et sa traduction, puis vous propose des exercices pour que les paroles restent.",
+      "p2_em": "Jusqu'à chanter sans regarder.",
+      "points": [
+        { "icon": "🎧", "title": "Vous écoutez", "desc": "Une chanson en boucle, dans une langue que vous ne maîtrisez pas." },
+        { "icon": "📖", "title": "Vous comprenez", "desc": "Chaque vers affiché avec sa traduction, dans la langue de votre choix." },
+        { "icon": "🧠", "title": "Vous retenez", "desc": "Des exercices progressifs jusqu'à chanter les paroles sans aide." }
+      ]
+    },
+    "flow": {
+      "label": "Parcours utilisateur",
+      "title_1": "3 étapes,",
+      "title_gold": "une chanson maîtrisée",
+      "steps": [
+        { "num": "1", "label": "Ajouter", "desc": "une chanson + paroles" },
+        { "num": "2", "label": "Comprendre", "desc": "lecture bilingue dans Mes Lyrics" },
+        { "num": "3", "label": "Mémoriser", "desc": "exercices interactifs" }
+      ],
+      "cta": "Découvrir toutes les fonctionnalités"
+    },
+    "donate": {
+      "title_1": "Combien ça coûte ?",
+      "title_gold": "C'est gratuit.",
+      "p": "Plutôt cool, non ? Évidemment, un petit merci pécunier reste toujours apprécié.",
+      "cta": "Soutenir le projet"
+    },
+    "cta_section": {
+      "label": "✦ Accès anticipé",
+      "title_1": "Soyez parmi les premiers",
+      "title_2": "à",
+      "title_gold": "chanter juste",
+      "p": "L'application est en développement. Inscrivez-vous pour être notifié à la sortie.",
+      "btn": "Rejoindre la liste d'attente"
+    }
+  },
+  "features": {
+    "header": {
+      "label": "✦ Fonctionnalités",
+      "title_1": "Comprendre.",
+      "title_gold": "Mémoriser.",
+      "subtitle": "Deux axes, trois écrans — tout ce qu'il faut pour passer de l'écoute passive à la maîtrise des paroles."
+    },
+    "lyre": {
+      "tab": "Onglet 1",
+      "title": "Mes",
+      "title_gold": "Lyrics",
+      "desc": "Votre collection de chansons avec une lecture bilingue ligne par ligne. Chaque vers s'affiche en langue originale avec sa traduction en dessous — dans la langue de votre choix.",
+      "features": [
+        "Collection filtrée par langue",
+        "Recherche dans les titres",
+        "Lecture paroles + traduction ligne par ligne",
+        "Sélecteur de langue cible",
+        "Notes & contexte personnels"
+      ]
+    },
+    "add": {
+      "tab": "Action centrale",
+      "title_gold": "Ajouter",
+      "title": "une chanson",
+      "desc": "Le bouton central flottant (FAB) ouvre un formulaire pour enrichir votre Lyre. Recherchez directement via l'API ou saisissez manuellement le titre, les paroles et une note personnelle.",
+      "features": [
+        "Recherche via API musicale",
+        "Saisie manuelle titre / artiste",
+        "Import ou saisie des paroles originales",
+        "Choix de la langue originale",
+        "Note personnelle (où, quand, pourquoi)"
+      ]
+    },
+    "memorize": {
+      "tab": "Onglet 2",
+      "title_gold": "Mémoriser",
+      "desc": "Quatre méthodes d'apprentissage progressives pour passer de la compréhension à la mémorisation complète, chanson par chanson, vers par vers.",
+      "methods": [
+        { "icon": "▢", "name": "Texte à trous", "desc": "Retrouvez les mots masqués dans le contexte", "color": "#F59E0B" },
+        { "icon": "A_", "name": "Première lettre", "desc": "Seule la 1ʳᵉ lettre de chaque mot est visible", "color": "#10B981" },
+        { "icon": "♪→", "name": "Karaoké", "desc": "Les paroles défilent, suivez le rythme", "color": "#EC4899" },
+        { "icon": "⚡", "name": "Flashcards", "desc": "Vers par vers, testez votre mémoire", "color": "#6366F1" }
+      ]
+    },
+    "cta": {
+      "label": "✦ Prêt à commencer ?",
+      "title": "Votre première chanson vous attend",
+      "subtitle": "Ajoutez une chanson, lisez sa traduction bilingue, puis testez-vous avec les exercices.",
+      "btn": "Retour à l'accueil"
+    }
+  },
+  "download": {
+    "header": {
+      "label": "✦ Accès anticipé",
+      "title_1": "L'app arrive.",
+      "title_gold": "Soyez les premiers.",
+      "subtitle": "Lyremember est en cours de développement. Inscrivez-vous pour recevoir une notification dès la sortie sur iOS et Android."
+    },
+    "form": {
+      "email_label": "Adresse e-mail",
+      "email_placeholder": "votre adresse e-mail",
+      "platform_label": "Plateforme souhaitée",
+      "platforms": [
+        { "value": "ios", "icon": "🍎", "label": "iOS" },
+        { "value": "android", "icon": "🤖", "label": "Android" },
+        { "value": "both", "icon": "📱", "label": "Les deux" }
+      ],
+      "submit": "Rejoindre la liste d'attente",
+      "submitted": "✓ Inscrit !",
+      "disclaimer": "Aucun spam. Juste une notification à la sortie.",
+      "disclaimer2": "Vous pouvez vous désinscrire à tout moment."
+    },
+    "upcoming": {
+      "label": "Au programme",
+      "title": "Ce qui vous attend",
+      "items": [
+        { "icon": "📖", "title": "Mes Lyrics", "desc": "Lecture bilingue ligne par ligne de toutes vos chansons, dans la langue de votre choix." },
+        { "icon": "🧩", "title": "Mémoriser", "desc": "Texte à trous, karaoké, flashcards et première lettre — quatre méthodes progressives." },
+        { "icon": "🌍", "title": "7 langues", "desc": "Anglais, français, espagnol, allemand, italien, japonais, portugais — et plus à venir." }
+      ]
+    },
+    "github": {
+      "text": "Le projet est open source",
+      "btn": "Voir le code source"
+    }
+  },
+  "legal": {
+    "header": {
+      "label": "Informations légales",
+      "title": "Mentions légales"
+    },
+    "notice": "",
+    "last_update": "Dernière mise à jour :"
+  }
+}

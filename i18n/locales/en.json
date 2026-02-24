@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "download": "Download"
+  },
+  "footer": {
+    "legal": "Legal notice",
+    "github": "GitHub",
+    "copy": "© 2026"
+  },
+  "index": {
+    "hero": {
+      "label": "✦ Understand & Memorize",
+      "title_1": "Learn your",
+      "title_2": "songs",
+      "title_gold": "by heart",
+      "subtitle": "Lyremember gives you a line-by-line bilingual translation of your favourite songs, then helps you memorize them with interactive exercises.",
+      "cta_primary": "Download the app",
+      "cta_secondary": "Features"
+    },
+    "why": {
+      "label": "Why Lyremember",
+      "title_1": "A song you love,",
+      "title_2": "lyrics you",
+      "title_gold": "don't understand",
+      "p1": "You hear a song in French, Spanish, Japanese. You find it beautiful, you play it on repeat — but the words escape you. You look up a translation, read it once, and it's gone.",
+      "p2": "Lyremember puts each line next to its translation, then offers exercises so the lyrics stick.",
+      "p2_em": "Until you can sing without looking.",
+      "points": [
+        { "icon": "🎧", "title": "You listen", "desc": "A song on repeat, in a language you don't master." },
+        { "icon": "📖", "title": "You understand", "desc": "Every line displayed with its translation, in the language of your choice." },
+        { "icon": "🧠", "title": "You remember", "desc": "Progressive exercises until you can sing the lyrics unaided." }
+      ]
+    },
+    "flow": {
+      "label": "User journey",
+      "title_1": "3 steps,",
+      "title_gold": "one song mastered",
+      "steps": [
+        { "num": "1", "label": "Add", "desc": "a song + lyrics" },
+        { "num": "2", "label": "Understand", "desc": "bilingual reading in My Lyrics" },
+        { "num": "3", "label": "Memorize", "desc": "interactive exercises" }
+      ],
+      "cta": "Discover all features"
+    },
+    "donate": {
+      "title_1": "How much does it cost?",
+      "title_gold": "It's free.",
+      "p": "Pretty cool, right? Of course, a small financial thank-you is always appreciated.",
+      "cta": "Support the project"
+    },
+    "cta_section": {
+      "label": "✦ Early access",
+      "title_1": "Be among the first",
+      "title_2": "to",
+      "title_gold": "sing in tune",
+      "p": "The app is in development. Sign up to be notified when it launches.",
+      "btn": "Join the waitlist"
+    }
+  },
+  "features": {
+    "header": {
+      "label": "✦ Features",
+      "title_1": "Understand.",
+      "title_gold": "Memorize.",
+      "subtitle": "Two focuses, three screens — everything you need to go from passive listening to mastering lyrics."
+    },
+    "lyre": {
+      "tab": "Tab 1",
+      "title": "My",
+      "title_gold": "Lyrics",
+      "desc": "Your song collection with line-by-line bilingual reading. Every line is shown in the original language with its translation below — in the language of your choice.",
+      "features": [
+        "Collection filtered by language",
+        "Search in titles",
+        "Lyrics + translation line by line",
+        "Target language selector",
+        "Personal notes & context"
+      ]
+    },
+    "add": {
+      "tab": "Central action",
+      "title_gold": "Add",
+      "title": "a song",
+      "desc": "The floating action button (FAB) opens a form to enrich your Lyre. Search directly via the API or manually enter the title, lyrics and a personal note.",
+      "features": [
+        "Search via music API",
+        "Manual title / artist entry",
+        "Import or enter original lyrics",
+        "Original language selection",
+        "Personal note (where, when, why)"
+      ]
+    },
+    "memorize": {
+      "tab": "Tab 2",
+      "title_gold": "Memorize",
+      "desc": "Four progressive learning methods to go from understanding to full memorization, song by song, line by line.",
+      "methods": [
+        { "icon": "▢", "name": "Fill-in-the-blank", "desc": "Find the hidden words in context", "color": "#F59E0B" },
+        { "icon": "A_", "name": "First letter", "desc": "Only the first letter of each word is shown", "color": "#10B981" },
+        { "icon": "♪→", "name": "Karaoke", "desc": "Lyrics scroll by — follow the rhythm", "color": "#EC4899" },
+        { "icon": "⚡", "name": "Flashcards", "desc": "Line by line, test your memory", "color": "#6366F1" }
+      ]
+    },
+    "cta": {
+      "label": "✦ Ready to start?",
+      "title": "Your first song is waiting",
+      "subtitle": "Add a song, read its bilingual translation, then test yourself with the exercises.",
+      "btn": "Back to home"
+    }
+  },
+  "download": {
+    "header": {
+      "label": "✦ Early access",
+      "title_1": "The app is coming.",
+      "title_gold": "Be the first.",
+      "subtitle": "Lyremember is in development. Sign up to receive a notification when it launches on iOS and Android."
+    },
+    "form": {
+      "email_label": "Email address",
+      "email_placeholder": "email address",
+      "platform_label": "Preferred platform",
+      "platforms": [
+        { "value": "ios", "icon": "🍎", "label": "iOS" },
+        { "value": "android", "icon": "🤖", "label": "Android" },
+        { "value": "both", "icon": "📱", "label": "Both" }
+      ],
+      "submit": "Join the waitlist",
+      "submitted": "✓ Signed up!",
+      "disclaimer": "No spam. Just a notification when we launch.",
+      "disclaimer2": "You can unsubscribe at any time."
+    },
+    "upcoming": {
+      "label": "Coming up",
+      "title": "What to expect",
+      "items": [
+        { "icon": "📖", "title": "My Lyrics", "desc": "Line-by-line bilingual reading of all your songs, in the language of your choice." },
+        { "icon": "🧩", "title": "Memorize", "desc": "Fill-in-the-blank, karaoke, flashcards and first letter — four progressive methods." },
+        { "icon": "🌍", "title": "7 languages", "desc": "English, French, Spanish, German, Italian, Japanese, Portuguese — and more to come." }
+      ]
+    },
+    "github": {
+      "text": "The project is open source",
+      "btn": "View source code"
+    }
+  },
+  "legal": {
+    "header": {
+      "label": "Legal information",
+      "title": "Legal notice"
+    },
+    "notice": "This page is only available in French as it concerns French law.",
+    "last_update": "Last updated:"
+  }
+}

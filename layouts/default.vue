@@ -1,36 +1,28 @@
 <template>
-  <div class="layout">
+  <div class="min-h-screen flex flex-col">
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <NuxtLink to="/" class="logo">
-            <svg width="22" height="22" viewBox="0 0 48 48" fill="none" class="logo-svg">
-              <path d="M18 44C16 38 14 32 13 28C11 22 10 16 12 10C14 6 16 4 14 2" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M30 44C32 38 34 32 35 28C37 22 38 16 36 10C34 6 32 4 34 2" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <line x1="18" y1="44" x2="30" y2="44" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M13.5 12H34.5" stroke="#F2A93B" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="20" y1="16" x2="20" y2="20" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="20" y1="23" x2="20" y2="30" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="20" y1="33" x2="20" y2="36" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="24" y1="14" x2="24" y2="22" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="24" y1="25" x2="24" y2="32" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="24" y1="35" x2="24" y2="42" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="28" y1="16" x2="28" y2="24" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="28" y1="27" x2="28" y2="34" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-              <line x1="28" y1="37" x2="28" y2="40" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-            </svg>
-            <span class="logo-text">Lyre<span class="logo-accent">member</span></span>
+          <NuxtLink :to="localePath('/')" class="logo">
+            <Logo />
           </NuxtLink>
+
           <div class="nav-links">
-            <NuxtLink to="/">Accueil</NuxtLink>
-            <NuxtLink to="/features">Fonctionnalités</NuxtLink>
-            <NuxtLink to="/about">À propos</NuxtLink>
+            <NuxtLink :to="localePath('/')">{{ $t('nav.home') }}</NuxtLink>
+            <NuxtLink :to="localePath('/features')">{{ $t('nav.features') }}</NuxtLink>
+            <NuxtLink :to="localePath('/download')">{{ $t('nav.download') }}</NuxtLink>
+            <a href="https://github.com" target="_blank" rel="noopener" class="github-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+            <LangSwitcher />
           </div>
         </nav>
       </div>
     </header>
 
-    <main class="main">
+    <main class="flex-1">
       <slot />
     </main>
 
@@ -38,29 +30,27 @@
       <div class="container">
         <div class="footer-inner">
           <div class="footer-brand">
-            <svg width="18" height="18" viewBox="0 0 48 48" fill="none">
-              <path d="M18 44C16 38 14 32 13 28C11 22 10 16 12 10C14 6 16 4 14 2" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M30 44C32 38 34 32 35 28C37 22 38 16 36 10C34 6 32 4 34 2" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <line x1="18" y1="44" x2="30" y2="44" stroke="#F2A93B" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M13.5 12H34.5" stroke="#F2A93B" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="24" y1="14" x2="24" y2="42" stroke="#F2A93B" stroke-width="1.1" stroke-linecap="round"/>
-            </svg>
-            <span>Lyre<span class="footer-accent">member</span></span>
+            <Logo size="sm" />
           </div>
-          <p class="footer-copy">&copy; 2026 Lyremember. Mémorisez vos souvenirs musicaux.</p>
+          <div class="footer-links">
+            <NuxtLink :to="localePath('/mentions-legales')">{{ $t('footer.legal') }}</NuxtLink>
+            <a href="https://github.com" target="_blank" rel="noopener">{{ $t('footer.github') }}</a>
+          </div>
+          <p class="footer-copy">
+            {{ $t('footer.copy') }}
+            <a href="https://www.scriptami.com" target="_blank" rel="noopener" class="footer-copy-link">Scriptami</a>
+          </p>
         </div>
       </div>
     </footer>
   </div>
 </template>
 
-<style scoped>
-.layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+<script setup>
+const localePath = useLocalePath()
+</script>
 
+<style scoped>
 .header {
   background: #131022;
   border-bottom: 1px solid #2A2440;
@@ -68,13 +58,11 @@
   top: 0;
   z-index: 100;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -89,31 +77,13 @@
   text-decoration: none;
   transition: transform 0.2s;
 }
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-.logo-svg {
-  flex-shrink: 0;
-}
-
-.logo-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 300;
-  color: #F5F0EB;
-}
-
-.logo-accent {
-  color: #F2A93B;
-}
+.logo:hover { transform: scale(1.05); }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 28px;
 }
-
 .nav-links a {
   color: #B8B0D0;
   text-decoration: none;
@@ -122,72 +92,59 @@
   transition: color 0.2s;
   position: relative;
 }
-
-.nav-links a:hover {
-  color: #F2A93B;
-}
-
-.nav-links a.router-link-active {
-  color: #F2A93B;
-}
-
-.nav-links a.router-link-active::after {
+.nav-links a:hover { color: #F2A93B; }
+.nav-links a.router-link-exact-active { color: #F2A93B; }
+.nav-links a.router-link-exact-active::after {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   height: 2px;
   background: #F2A93B;
   border-radius: 1px;
 }
 
-.main {
-  flex: 1;
+.github-link {
+  display: flex;
+  align-items: center;
+  color: #8A82A0 !important;
+  transition: color 0.2s !important;
 }
+.github-link:hover { color: #F2A93B !important; }
+.github-link::after { display: none !important; }
 
 .footer {
   background: #131022;
   border-top: 1px solid #2A2440;
   padding: 32px 0;
 }
-
 .footer-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
-
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #F5F0EB;
 }
-
-.footer-accent {
-  color: #F2A93B;
+.footer-links {
+  display: flex;
+  gap: 24px;
 }
-
-.footer-copy {
+.footer-links a {
   color: #8A82A0;
+  text-decoration: none;
   font-size: 13px;
+  transition: color 0.2s;
 }
+.footer-links a:hover { color: #F2A93B; }
+.footer-copy { color: #8A82A0; font-size: 13px; }
+.footer-copy-link { color: #8A82A0; text-decoration: none; transition: color 0.2s; }
+.footer-copy-link:hover { color: #F2A93B; }
 
 @media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 0;
-    gap: 15px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
+  .nav { flex-direction: column; height: auto; padding: 15px 0; gap: 15px; }
+  .nav-links { gap: 16px; flex-wrap: wrap; justify-content: center; }
 }
 </style>
