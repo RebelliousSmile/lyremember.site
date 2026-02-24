@@ -2,15 +2,16 @@
   <div class="about-page">
     <section class="page-header">
       <div class="container">
-        <h1>À propos de Lyremember</h1>
-        <p>Une application pour ne jamais oublier vos découvertes musicales</p>
+        <p class="header-label">✦ À propos</p>
+        <h1>À propos de <span class="header-accent">Lyremember</span></h1>
+        <p class="header-sub">Une application pour ne jamais oublier vos découvertes musicales</p>
       </div>
     </section>
 
     <section class="about-content">
       <div class="container">
         <div class="about-section">
-          <h2>Qu'est-ce que Lyremember ?</h2>
+          <h2>Qu'est-ce que <span class="accent">Lyremember</span> ?</h2>
           <p>
             Lyremember est une application conçue pour les passionnés de musique qui souhaitent garder une trace
             de toutes leurs découvertes musicales. Combien de fois avez-vous entendu une chanson géniale et l'avez
@@ -24,7 +25,7 @@
         </div>
 
         <div class="about-section">
-          <h2>Pourquoi Lyremember ?</h2>
+          <h2>Pourquoi <span class="accent">Lyremember</span> ?</h2>
           <div class="reasons-grid">
             <div class="reason-card">
               <h3>🎯 Mission</h3>
@@ -54,7 +55,7 @@
         </div>
 
         <div class="about-section">
-          <h2>Comment ça marche ?</h2>
+          <h2>Comment ça <span class="accent">marche</span> ?</h2>
           <div class="steps">
             <div class="step">
               <div class="step-number">1</div>
@@ -81,7 +82,7 @@
         </div>
 
         <div class="about-section">
-          <h2>Technologies utilisées</h2>
+          <h2>Technologies <span class="accent">utilisées</span></h2>
           <div class="tech-stack">
             <div class="tech-item">
               <span class="tech-icon">⚡</span>
@@ -103,7 +104,7 @@
         </div>
 
         <div class="about-section">
-          <h2>Notre Vision</h2>
+          <h2>Notre <span class="accent">Vision</span></h2>
           <p>
             Nous croyons que la musique est intimement liée à nos souvenirs et émotions. Chaque chanson raconte
             une histoire, évoque un moment, un lieu, une personne. Lyremember vise à préserver ces connexions
@@ -116,7 +117,7 @@
         </div>
 
         <div class="about-section">
-          <h2>Contact et Contribution</h2>
+          <h2>Contact et <span class="accent">Contribution</span></h2>
           <p>
             Lyremember est un projet en constante évolution. Nous accueillons avec plaisir les retours,
             suggestions et contributions de notre communauté de mélomanes.
@@ -138,6 +139,7 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
+          <p class="cta-label">✦ Rejoignez l'aventure</p>
           <h2>Commencez votre voyage musical</h2>
           <p>Découvrez comment Lyremember peut transformer votre expérience musicale</p>
           <NuxtLink to="/" class="btn btn-primary">Retour à l'accueil</NuxtLink>
@@ -149,25 +151,15 @@
 
 <style scoped>
 .about-page {
-  background: white;
+  background: #0D0B1A;
 }
 
+/* ─── PAGE HEADER ─── */
 .page-header {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
-  padding: 60px 0;
+  background: radial-gradient(ellipse at top, #13102280, #0D0B1A);
+  border-bottom: 1px solid #2A2440;
+  padding: 70px 0;
   text-align: center;
-}
-
-.page-header h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 15px;
-}
-
-.page-header p {
-  font-size: 1.25rem;
-  opacity: 0.95;
 }
 
 .container {
@@ -176,8 +168,35 @@
   padding: 0 20px;
 }
 
+.header-label {
+  color: #F2A93B;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #F5F0EB;
+  margin-bottom: 14px;
+}
+
+.header-accent {
+  color: #F2A93B;
+}
+
+.header-sub {
+  font-size: 1.1rem;
+  color: #B8B0D0;
+}
+
+/* ─── ABOUT CONTENT ─── */
 .about-content {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .about-section {
@@ -185,99 +204,122 @@
 }
 
 .about-section h2 {
-  font-size: 2.5rem;
-  color: #1f2937;
-  margin-bottom: 30px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #F5F0EB;
+  margin-bottom: 28px;
   text-align: center;
 }
 
+.accent {
+  color: #F2A93B;
+}
+
 .about-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
-  color: #6b7280;
-  margin-bottom: 20px;
+  color: #B8B0D0;
+  margin-bottom: 16px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
+/* ─── REASONS ─── */
 .reasons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 36px;
 }
 
 .reason-card {
-  background: #f9fafb;
-  padding: 30px;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #1A1528;
+  border: 1px solid #2A2440;
+  padding: 28px;
+  border-radius: 20px;
+  transition: transform 0.25s, border-color 0.25s;
 }
 
 .reason-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(242, 169, 59, 0.3);
 }
 
 .reason-card h3 {
-  font-size: 1.5rem;
-  color: #1f2937;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #F5F0EB;
+  margin-bottom: 12px;
 }
 
 .reason-card p {
-  color: #6b7280;
+  color: #8A82A0;
+  font-size: 14px;
   line-height: 1.6;
   margin: 0;
+  text-align: left;
 }
 
+/* ─── STEPS ─── */
 .steps {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  margin: 40px auto 0;
+  gap: 16px;
+  max-width: 700px;
+  margin: 36px auto 0;
 }
 
 .step {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   align-items: flex-start;
+  background: #1A1528;
+  border: 1px solid #2A2440;
+  border-radius: 20px;
+  padding: 24px;
 }
 
 .step-number {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(242, 169, 59, 0.15);
+  border: 1px solid rgba(242, 169, 59, 0.3);
+  color: #F2A93B;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
 .step-content h3 {
-  font-size: 1.5rem;
-  color: #1f2937;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F5F0EB;
+  margin-bottom: 6px;
 }
 
 .step-content p {
-  color: #6b7280;
+  color: #8A82A0;
+  font-size: 14px;
   line-height: 1.6;
   margin: 0;
+  text-align: left;
 }
 
+/* ─── TECH STACK ─── */
 .tech-stack {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 40px;
+  gap: 16px;
+  margin-top: 36px;
 }
 
 .tech-item {
@@ -285,31 +327,35 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 20px;
-  background: #f9fafb;
-  border-radius: 12px;
-  min-width: 120px;
-  transition: transform 0.3s;
+  padding: 20px 24px;
+  background: #1A1528;
+  border: 1px solid #2A2440;
+  border-radius: 16px;
+  min-width: 110px;
+  transition: transform 0.25s, border-color 0.25s;
 }
 
 .tech-item:hover {
   transform: scale(1.05);
+  border-color: rgba(242, 169, 59, 0.3);
 }
 
 .tech-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .tech-name {
   font-weight: 600;
-  color: #1f2937;
+  font-size: 13px;
+  color: #B8B0D0;
 }
 
+/* ─── CONTACT ─── */
 .contact-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 16px;
+  margin-top: 28px;
   flex-wrap: wrap;
 }
 
@@ -317,29 +363,33 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 15px 30px;
-  background: #f9fafb;
-  border-radius: 8px;
+  padding: 14px 28px;
+  background: #1A1528;
+  border: 1px solid #2A2440;
+  border-radius: 12px;
   text-decoration: none;
-  color: #1f2937;
+  color: #B8B0D0;
   font-weight: 600;
-  transition: all 0.3s;
+  font-size: 15px;
+  transition: all 0.25s;
 }
 
 .contact-link:hover {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
+  background: rgba(242, 169, 59, 0.1);
+  border-color: #F2A93B;
+  color: #F2A93B;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
 }
 
 .link-icon {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
+/* ─── CTA ─── */
 .cta-section {
-  background: #f9fafb;
-  padding: 80px 0;
+  background: #131022;
+  border-top: 1px solid #2A2440;
+  padding: 90px 0;
 }
 
 .cta-content {
@@ -348,49 +398,66 @@
   margin: 0 auto;
 }
 
+.cta-label {
+  color: #F2A93B;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
 .cta-content h2 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
-  color: #1f2937;
-  margin-bottom: 15px;
+  font-weight: 300;
+  color: #F5F0EB;
+  margin-bottom: 14px;
 }
 
 .cta-content p {
-  font-size: 1.25rem;
-  color: #6b7280;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #B8B0D0;
+  margin-bottom: 32px;
 }
 
 .btn {
-  padding: 12px 30px;
-  border-radius: 8px;
+  padding: 13px 28px;
+  border-radius: 12px;
   font-weight: 600;
+  font-size: 15px;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.25s;
   display: inline-block;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-  color: white;
+  background: #F2A93B;
+  color: #0D0B1A;
 }
 
 .btn-primary:hover {
+  background: #E09520;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 24px rgba(242, 169, 59, 0.35);
 }
 
 @media (max-width: 768px) {
   .page-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .about-section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .step {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .step-content p {
     text-align: center;
   }
 
